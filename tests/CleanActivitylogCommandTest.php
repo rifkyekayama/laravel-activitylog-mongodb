@@ -4,7 +4,7 @@ namespace RifkyEkayama\Activitylog\Test;
 
 use Artisan;
 use Carbon\Carbon;
-use Spatie\Activitylog\Models\Activity;
+use RifkyEkayama\Activitylog\Models\Activity;
 
 class CleanActivitylogCommandTest extends TestCase
 {

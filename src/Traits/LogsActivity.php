@@ -3,10 +3,10 @@
 namespace RifkyEkayama\Activitylog\Traits;
 
 use Illuminate\Support\Collection;
-use Spatie\Activitylog\ActivityLogger;
+use RifkyEkayama\Activitylog\ActivityLogger;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Spatie\Activitylog\ActivitylogServiceProvider;
+use RifkyEkayama\Activitylog\ActivitylogServiceProvider;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 trait LogsActivity

@@ -2,14 +2,14 @@
 
 namespace RifkyEkayama\Activitylog\Test;
 
-use Spatie\Activitylog\Models\Activity;
-use Spatie\Activitylog\Test\Models\User;
-use Spatie\Activitylog\Test\Models\Article;
-use Spatie\Activitylog\Traits\LogsActivity;
+use RifkyEkayama\Activitylog\Models\Activity;
+use RifkyEkayama\Activitylog\Test\Models\User;
+use RifkyEkayama\Activitylog\Test\Models\Article;
+use RifkyEkayama\Activitylog\Traits\LogsActivity;
 
 class DetectsChangesTest extends TestCase
 {
-    /** @var \Spatie\Activitylog\Test\Article|\Spatie\Activitylog\Traits\LogsActivity */
+    /** @var \RifkyEkayama\Activitylog\Test\Article|\RifkyEkayama\Activitylog\Traits\LogsActivity */
     protected $article;
 
     public function setUp()

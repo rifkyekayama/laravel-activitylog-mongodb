@@ -4,10 +4,10 @@ namespace RifkyEkayama\Activitylog;
 
 use Illuminate\Auth\AuthManager;
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Activitylog\Models\Activity;
+use RifkyEkayama\Activitylog\Models\Activity;
 use Illuminate\Support\Traits\Macroable;
 use Illuminate\Contracts\Config\Repository;
-use Spatie\Activitylog\Exceptions\CouldNotLogActivity;
+use RifkyEkayama\Activitylog\Exceptions\CouldNotLogActivity;
 
 class ActivityLogger
 {
@@ -155,7 +155,7 @@ class ActivityLogger
     /**
      * @param \Illuminate\Database\Eloquent\Model|int|string $modelOrId
      *
-     * @throws \Spatie\Activitylog\Exceptions\CouldNotLogActivity
+     * @throws \RifkyEkayama\Activitylog\Exceptions\CouldNotLogActivity
      *
      * @return \Illuminate\Database\Eloquent\Model
      */

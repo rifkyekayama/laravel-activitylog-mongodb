@@ -4,8 +4,8 @@ namespace RifkyEkayama\Activitylog;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
-use Spatie\Activitylog\Models\Activity;
-use Spatie\Activitylog\Exceptions\InvalidConfiguration;
+use RifkyEkayama\Activitylog\Models\Activity;
+use RifkyEkayama\Activitylog\Exceptions\InvalidConfiguration;
 
 class ActivitylogServiceProvider extends ServiceProvider
 {

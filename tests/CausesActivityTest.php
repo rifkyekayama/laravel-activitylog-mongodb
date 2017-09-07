@@ -2,7 +2,7 @@
 
 namespace RifkyEkayama\Activitylog\Test;
 
-use Spatie\Activitylog\Test\Models\User;
+use RifkyEkayama\Activitylog\Test\Models\User;
 
 class CausesActivityTest extends TestCase
 {

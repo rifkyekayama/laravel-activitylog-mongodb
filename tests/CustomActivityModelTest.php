@@ -2,9 +2,9 @@
 
 namespace RifkyEkayama\Activitylog\Test;
 
-use Spatie\Activitylog\Exceptions\InvalidConfiguration;
-use Spatie\Activitylog\Test\Models\CustomActivityModel;
-use Spatie\Activitylog\Test\Models\InvalidActivityModel;
+use RifkyEkayama\Activitylog\Exceptions\InvalidConfiguration;
+use RifkyEkayama\Activitylog\Test\Models\CustomActivityModel;
+use RifkyEkayama\Activitylog\Test\Models\InvalidActivityModel;
 
 class CustomActivityModelTest extends TestCase
 {

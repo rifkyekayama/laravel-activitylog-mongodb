@@ -4,10 +4,10 @@ namespace RifkyEkayama\Activitylog\Test;
 
 use Auth;
 use Illuminate\Support\Collection;
-use Spatie\Activitylog\Models\Activity;
-use Spatie\Activitylog\Test\Models\User;
-use Spatie\Activitylog\Test\Models\Article;
-use Spatie\Activitylog\Exceptions\CouldNotLogActivity;
+use RifkyEkayama\Activitylog\Models\Activity;
+use RifkyEkayama\Activitylog\Test\Models\User;
+use RifkyEkayama\Activitylog\Test\Models\Article;
+use RifkyEkayama\Activitylog\Exceptions\CouldNotLogActivity;
 
 class ActivityloggerTest extends TestCase
 {

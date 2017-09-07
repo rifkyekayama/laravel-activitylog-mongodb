@@ -3,7 +3,7 @@
 namespace RifkyEkayama\Activitylog\Traits;
 
 use Illuminate\Database\Eloquent\Model;
-use Spatie\Activitylog\Exceptions\CouldNotLogChanges;
+use RifkyEkayama\Activitylog\Exceptions\CouldNotLogChanges;
 
 trait DetectsChanges
 {

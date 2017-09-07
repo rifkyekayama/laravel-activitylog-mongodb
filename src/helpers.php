@@ -1,6 +1,6 @@
 <?php
 
-use Spatie\Activitylog\ActivityLogger;
+use RifkyEkayama\Activitylog\ActivityLogger;
 
 if (! function_exists('activity')) {
     function activity(string $logName = null): ActivityLogger

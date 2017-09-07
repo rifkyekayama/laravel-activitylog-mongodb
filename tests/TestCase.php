@@ -2,11 +2,11 @@
 
 namespace RifkyEkayama\Activitylog\Test;
 
-use Spatie\Activitylog\Models\Activity;
-use Spatie\Activitylog\Test\Models\User;
+use RifkyEkayama\Activitylog\Models\Activity;
+use RifkyEkayama\Activitylog\Test\Models\User;
 use Illuminate\Database\Schema\Blueprint;
-use Spatie\Activitylog\Test\Models\Article;
-use Spatie\Activitylog\ActivitylogServiceProvider;
+use RifkyEkayama\Activitylog\Test\Models\Article;
+use RifkyEkayama\Activitylog\ActivitylogServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 abstract class TestCase extends OrchestraTestCase
@@ -107,7 +107,7 @@ abstract class TestCase extends OrchestraTestCase
     }
 
     /**
-     * @return \Spatie\Activitylog\Models\Activity|null
+     * @return \RifkyEkayama\Activitylog\Models\Activity|null
      */
     public function getLastActivity()
     {

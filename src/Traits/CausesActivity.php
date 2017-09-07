@@ -2,7 +2,7 @@
 
 namespace RifkyEkayama\Activitylog\Traits;
 
-use Spatie\Activitylog\ActivitylogServiceProvider;
+use RifkyEkayama\Activitylog\ActivitylogServiceProvider;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 trait CausesActivity

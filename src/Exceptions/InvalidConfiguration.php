@@ -3,7 +3,7 @@
 namespace RifkyEkayama\Activitylog\Exceptions;
 
 use Exception;
-use Spatie\Activitylog\Models\Activity;
+use RifkyEkayama\Activitylog\Models\Activity;
 
 class InvalidConfiguration extends Exception
 {
