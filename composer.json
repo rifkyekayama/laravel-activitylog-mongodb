@@ -1,5 +1,5 @@
 {
-    "name": "rifkyekayama/laravel-activitylog-mongodb",
+    "name": "rifkyekayama/laravel-activitylog",
     "description": "A very simple activity logger to monitor the users of your website or application",
     "homepage": "https://github.com/spatie/activitylog",
     "keywords":
@@ -26,21 +26,21 @@
     ],
     "require": {
         "php" : "^7.0",
-        "illuminate/config": "~5.1.0|~5.2.0|~5.3.0|~5.4.0",
-        "illuminate/database": "~5.1.0|~5.2.0|~5.3.0|~5.4.0",
-        "illuminate/support": "~5.1.0|~5.2.0|~5.3.0|~5.4.0",
+        "illuminate/config": "~5.5.0",
+        "illuminate/database": "~5.5.0",
+        "illuminate/support": "~5.5.0",
         "spatie/string": "^2.1",
         "jenssegers/mongodb": "^3.2"
 
     },
     "require-dev": {
-        "phpunit/phpunit": "^5.7",
-        "orchestra/testbench": "~3.3.0|~3.4.0",
-        "orchestra/database": "~3.3.0|~3.4.0"
+        "phpunit/phpunit": "~6.2",
+        "orchestra/testbench": "~3.5.0",
+        "orchestra/database": "~3.5.0"
     },
     "autoload": {
         "psr-4": {
-            "RifkyEkayama\\Activitylog\\": "src"
+            "Spatie\\Activitylog\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -48,10 +48,9 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "RifkyEkayama\\Activitylog\\Test\\": "tests"
+            "Spatie\\Activitylog\\Test\\": "tests"
         }
     },
-
     "scripts": {
         "test": "vendor/bin/phpunit"
     },
@@ -59,7 +58,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "RifkyEkayama\\Activitylog\\ActivitylogServiceProvider"
+                "Spatie\\Activitylog\\ActivitylogServiceProvider"
             ]
         }
     }

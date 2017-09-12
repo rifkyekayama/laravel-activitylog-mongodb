@@ -2,6 +2,17 @@
 
 All notable changes to `spatie/laravel-activitylog` will be documented in this file
 
+## 2.1.1 - 2017-09-12
+- make sure `properties` always is a collection
+
+## 2.1.0 - 2017-09-19
+- added support for logging fillable attributes
+
+## 2.0.0 - 2017-08-30
+- added support for Laravel 5.5, dropped support for older laravel versions
+- renamed config file from `laravel-activitylog` to `activitylog`
+- rename `getChangesAttribute` function to `changes` so it doesn't conflict with Laravel's native functionality
+
 ## 1.16.0 - 2017-06-28
 - added `enableLogging` and `disableLogging`
 

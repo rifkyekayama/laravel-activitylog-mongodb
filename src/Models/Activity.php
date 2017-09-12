@@ -3,18 +3,13 @@
 namespace RifkyEkayama\Activitylog\Models;
 
 use Illuminate\Support\Collection;
-use Jenssegers\Mongodb\Eloquent\Model as Moloquent;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
-use Jenssegers\Mongodb\Eloquent\SoftDeletes;
 
-class Activity extends Moloquent
+class Activity extends Model
 {
-    use SoftDeletes;
-    
-    protected $connection='mongodb';
-    protected $collection = 'activity_log';
-    protected $dates = ['deleted_at'];
+    protected $table = 'activity_log';
 
     public $guarded = [];
 
@@ -24,7 +19,7 @@ class Activity extends Moloquent
 
     public function subject(): MorphTo
     {
-        if (config('laravel-activitylog.subject_returns_soft_deleted_models')) {
+        if (config('activitylog.subject_returns_soft_deleted_models')) {
             return $this->morphTo()->withTrashed();
         }
 
@@ -48,8 +43,12 @@ class Activity extends Moloquent
         return array_get($this->properties->toArray(), $propertyName);
     }
 
-    public function getChangesAttribute(): Collection
+    public function changes(): Collection
     {
+        if (! $this->properties instanceof Collection) {
+            return new Collection();
+        }
+        
         return collect(array_filter($this->properties->toArray(), function ($key) {
             return in_array($key, ['attributes', 'old']);
         }, ARRAY_FILTER_USE_KEY));

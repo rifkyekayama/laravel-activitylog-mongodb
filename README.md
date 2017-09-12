@@ -76,7 +76,7 @@ Our address is: Spatie, Samberstraat 69D, 2060 Antwerp, Belgium.
 All postcards are published [on our website](https://spatie.be/en/opensource/postcards).
 
 ## Documentation
-You'll find the documentation on [https://docs.spatie.be/laravel-activitylog/v1](https://docs.spatie.be/laravel-activitylog/v1).
+You'll find the documentation on [https://docs.spatie.be/laravel-activitylog/v2](https://docs.spatie.be/laravel-activitylog/v2).
 
 Find yourself stuck using the package? Found a bug? Do you have general questions or suggestions for improving the activity log? Feel free to [create an issue on GitHub](https://github.com/spatie/laravel-activitylog/issues), we'll try to address it as soon as possible.
 
@@ -91,15 +91,7 @@ You can install the package via composer:
 composer require spatie/laravel-activitylog
 ```
 
-Next, you must install the service provider:
-
-```php
-// config/app.php
-'providers' => [
-    ...
-    Spatie\Activitylog\ActivitylogServiceProvider::class,
-];
-```
+The package will automatically register itself.
 
 You can publish the migration with:
 ```bash
