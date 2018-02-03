@@ -40,7 +40,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Activitylog\\": "src"
+            "RifkyEkayama\\Activitylog\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -48,7 +48,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Activitylog\\Test\\": "tests"
+            "RifkyEkayama\\Activitylog\\Test\\": "tests"
         }
     },
     "scripts": {
@@ -58,7 +58,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Activitylog\\ActivitylogServiceProvider"
+                "RifkyEkayama\\Activitylog\\ActivitylogServiceProvider"
             ]
         }
     }
